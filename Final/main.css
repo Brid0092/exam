@@ -1,0 +1,1077 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥*/
+/* ~~~~~~~~~~~~~~ CSS RESET ~~~~~~~~~~~~~~~~ */ 
+/* ♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥*/
+/* 
+
+/* ♥ Mobile Styles ♥ */
+html {
+    font-family:"open-sans", sans-serif;
+}
+
+.menu {
+    background-color: #222;
+    width: 100vw;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #c78e07;
+}
+
+ul li {
+    margin: 15px;
+    width: calc(100vw - 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li:hover {
+    background-color:#c78e07;
+    color: #222;
+}
+
+a:hover {
+    color: #222;
+}
+
+#current {
+    background-color: #c78e07;
+    margin: 0px 15px;
+    padding-top:20px;
+}
+
+#current a {
+    color: #222;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    position: absolute;
+    left: 10px;
+}
+
+.searchbar {
+    padding: 10px 100px 5px 0px;
+    margin: 10px;
+    width: 680px;
+}
+
+
+.banner {
+    position: absolute;
+    top: 10%;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+    height: 73%;
+}
+
+h1 {
+    font-size: 5.2rem;
+    color: white;
+    line-height: 5.5rem;
+    font-weight: bold;
+    padding: 25px 25px;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.welcome {
+    position: relative;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.button-a {
+    background-color: #c78e07;
+    padding: 40px;
+    font-size: 1.6rem;
+}
+
+.about {
+    display: flex;
+    flex-direction:column;
+    height: 840px;
+    background-color: #ffe6ac;
+}
+
+.gameroom {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 
+}
+
+.intro {
+    color: black;
+    font-size: 4.2rem;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.aboutinfo {
+    padding: 25px;
+    font-size: 19px;
+    line-height: 1.9rem;
+}
+
+.services {
+    display:flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.ourservices {
+    color: black;
+    color: black;
+    font-size: 4.2rem;
+    padding: 25px;
+    font-weight: bold;
+}
+
+.digital {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dt {
+    font-size: 2.2rem;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+}
+
+.dt-text {
+    font-size: 19px;
+    padding: 15px;
+    background-color: #ffe6ac;
+    height: 150px;
+
+}
+
+.dp-button {
+    background-color: #222;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+}
+
+.computer-img {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.marketing {
+    font-size: 2.2rem;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+}
+
+.m-text {
+    font-size: 19px;
+    padding: 15px;
+    background-color: #ffe6ac;
+    height: 150px;
+}
+
+.mp-button {
+    background-color: #222;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+}
+
+.youtube {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.videoprod {
+    font-size: 2.2rem;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+}
+
+.vd-text {
+    font-size: 19px;
+    padding: 15px;
+    background-color: #ffe6ac;
+    height: 150px;
+}
+
+.vd-button {
+    background-color: #222;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+}
+
+.phoneondesk {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+.webdev {
+    font-size: 2.2rem;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+}
+
+.wd-text {
+    font-size: 19px;
+    padding: 15px;
+    background-color: #ffe6ac;
+    height: 150px;
+}
+
+.wd-button {
+    background-color: #222;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+}
+
+.newspaper {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+
+}
+
+.print {
+    font-size: 2.2rem;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+}
+
+.p-text {
+    font-size: 19px;
+    padding: 15px;
+    background-color: #ffe6ac;
+    height: 180px;
+}
+
+.p-button {
+    background-color: #222;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+}
+
+
+.paperboat {
+    width: 100%;
+    height: 300px;
+
+}
+
+.vision {
+    position: absolute;
+    padding: 20px;
+    color: white; 
+}
+
+.ourvision {
+    font-size: 2.2rem;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.v-text {
+    font-size: 19px;
+    padding: 12px;
+    height: 180px;
+}
+
+.learn {
+    background-color: #222;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+    border-color:#c78c06;
+}
+
+.john {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.ourteam {
+    font-size: 2.2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.johndoe {
+    font-size: 2.3rem;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.ceojohn {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.j-text {
+    font-size: 19px;
+    padding: 10px;
+    background-color: #ffe6ac;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+} 
+
+.line {
+    background-color: #c78e07;
+    border:none;
+    height: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+   
+
+}
+
+.secjohn {
+    background-color: #ffe6ac;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.bob {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+.bobrite {
+    font-size: 2.3rem;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.ceobob {
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ffe6ac;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.b-text {
+    font-size: 19px;
+    padding: 10px;
+    background-color: #ffe6ac;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+} 
+
+.secbob {
+    background-color: #ffe6ac;
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+}
+.contactus {
+    font-size: 3.2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.messages {
+    font-size: 2.2rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contact {
+    position:relative;
+    border-radius: 3px;
+    background-color: white;
+    padding-left: 15px;
+}
+
+.fn, .msg, .email {
+    font-size: 16px;
+    padding: 8px;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+}
+
+.bigmsg {
+    padding-bottom: 100px;
+}
+
+.submit {
+    background-color: #222;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: #c78e07;
+    margin: 10px;
+}
+
+.hours {
+    width:80%;
+    padding: 15px;
+}
+
+.table {
+    padding-top: 4px;
+    width: 90%;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+table {
+    border-collapse: collapse;
+    width: 126%;
+}
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.hoo {
+    padding-top: 4px;
+    font-size: 28px;
+    padding: 8px;
+    font-weight: bold;
+
+}
+
+.google-maps {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.location {
+    font-size: 2.2rem;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color:#c78e07;
+    padding: 20px;
+    line-height: 2.5rem;
+}
+
+span {
+    text-decoration:underline;
+} 
+
+/* ♥ Beggining Of Media Screen ♥ */
+
+@media screen and (min-width: 760px){
+
+    html {
+        font-family:"open-sans", sans-serif;
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .il {
+        display: inline-block;
+    }
+
+    ul li {
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        color:#c78e07;
+        margin-top: 100px;
+        flex-shrink: 0; 
+    }  
+ 
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .about {
+        margin: 0;
+        padding: 0;
+        height: 0px;
+    }
+
+    #current {
+        padding-left:25px;
+    }
+
+    .topcontainer {
+        display: inline;
+        width: 1200px;
+        margin: auto;
+    }
+
+    .first-ul {
+        display: inline;
+    }
+
+    .menu {
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .im-magnifier{
+        color: #c78c06;
+        padding: 10px;
+    }
+
+    .magnify-button{
+        background-color: #ffe6ac;  
+        display:block;      
+    }    
+    button.magnify-button{
+        border: 2px solid rgb(199, 140, 6);
+    }
+
+    .star {
+        padding-top:35px;
+        padding-left: 60px;
+        width: 50px;
+    }
+
+    .glass {
+        padding-top: 50px;
+        display: flex;
+        width: 150px;
+        height: 40px;
+        margin: 0px;
+    }
+   
+    .searchbar {
+        font-size: 0.8rem;
+    }
+
+    .banner {
+       position: absolute;
+       top: 10%;
+       padding: 15px;
+       background: rgba(0,0,0,0.6);
+       height: 73%;
+       margin: 15px;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+        color: white;
+        line-height: 4.5rem;
+        font-weight: bold;
+        padding: 25px 25px;
+    }
+    
+    .welcome-text {
+        color: white;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 25px;
+
+    }
+    
+    .welcome {
+        position: relative;
+    }
+    
+    .main-img {
+        width: 100%;
+        height: 600px;
+       
+    }
+    
+    .button-a {
+        background-color: #c78e07;
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .gameroom {
+        padding: 15px;
+        width: 45%;
+        height: 250px;
+        float: left;
+    }
+
+    .intro-p {
+        height: 250px;
+        background-color: #ffe6ac;
+        width: 100vw;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    .intro {
+        font-size: 2.0rem;
+        padding: 10px; 
+        font-weight: bold;
+    }
+
+    .aboutinfo {
+        line-height: 1.3rem;
+    }
+   
+    .ourservices {
+        font-weight: bold;
+        padding: 15px;
+        padding-top: 280px;
+        font-size: 2.0rem;
+        margin-left: 35px;
+    }
+    
+    .services {
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .ourservicesgrid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+    }
+
+   .ourservices-1:nth-child(1){
+        grid-column: 1;
+    }
+    .ourservices-1:nth-child(2){
+        grid-column: 2;
+    } 
+
+    .ourservices-1{
+        background-color: #ffe6ac;
+        height: 210px;
+        border-right: 5px solid white;
+    }
+
+    .dt {
+        background-color: #ffe6ac;
+        padding-top: 60px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        border-right: 5px solid white;
+    }
+
+    .dt-text {
+        background-color: #ffe6ac;
+        padding-top: 25px;
+        padding-left: 10px;
+        border-right: 5px solid white;
+        height: 250px;
+    }
+
+    .marketing {
+        background-color: #ffe6ac;
+        padding-top: 60px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .m-text {
+        background-color: #ffe6ac;
+        padding-left: 10px;
+        height: 250px;
+    }
+
+    .digital {
+        padding: 15px;
+        padding-left: 20px;
+    }
+
+    .computer-img {
+        padding: 15px;
+        padding-left: 20px;
+    }
+
+    .dp-button, .mp-button {
+        display: flex;
+        justify-content: center;
+        background-color: #222;
+        padding: 20px;
+        font-size: 1.2rem;
+        color: white;
+        margin: 10px;
+        width: calc(100% - 30px);
+    }
+
+    .services-2 {
+        display: grid; 
+        grid-template-columns: 400px 400px 400px;
+    }
+
+    .grid-2:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .grid-2:nth-child(2) {
+        grid-column: 2;
+    }
+
+    .grid-2:nth-child(3) {
+        grid-column: 3;
+    }
+
+    .grid-2 {
+        background-color: #ffe6ac;
+        padding: 15px;
+        border-top: 10px solid white;
+        border: 5px solid white;
+        height: 500px;
+    }
+
+    .vd-button, .wd-button, .p-button {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        width: calc(100% - 30px);
+        background-color: #222;
+        padding: 20px;
+        font-size: 1.2rem;
+        color: white;
+
+    }
+
+    .videoprod , .webdev , .print {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding: 5px;
+    }
+
+    .paperboat {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .vision {
+        position: absolute;
+        padding: 20px;
+        color: white; 
+    }
+    
+    .ourvision {
+        font-size: 1.2rem;
+        padding: 10px;
+        font-weight: bold;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .v-text {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        height: 180px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .learn {
+        background-color: #222;
+        padding: 30px;
+        font-size: 0.8rem;
+        color: white;
+        margin: 10px;
+        border-color:#c78c06;
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .team-grid:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .team-grid:nth-child(2) {
+        grid-column: 2;
+        background-color:#ffe6ac;
+    }
+
+    .team-grid:nth-child(3) {
+        grid-row: 2;
+
+    }
+
+    .team-grid:nth-child(4) {
+        grid-row: 2;
+        grid-column:1;
+        background-color:#ffe6ac;
+    }
+
+    .ourteam {
+        font-weight: bold;
+        padding: 15px;
+        font-size: 2.0rem;
+        margin-left: 35px;
+    }
+
+    .bobrite, .johndoe {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        padding: 5px;
+    }
+
+    .ceobob,  .ceojohn {
+        font-size: 1.1rem;
+        padding-left: 10px;
+        padding: 5px;
+    }
+
+    .b-text , .j-text {
+        padding: 10px;
+    }
+
+    .line {
+        background-color: #c78e07;
+        border:none;
+        height: 2px;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+    }
+
+    .contactus {
+        font-size: 3.2rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+    
+    .messages {
+        font-size: 2.2rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .map-contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(2, 100px 400px);
+    }
+    
+    .bottom-grid:nth-child(1) {
+        grid-column: 1;
+        grid-row:1;
+    }
+
+    .bottom-grid:nth-child(2) {
+        grid-column: 1;
+        grid-row:2;
+    }
+
+    .bottom-grid:nth-child(3) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .bottom-grid:nth-child(4) {
+        grid-column: 2;
+        grid-row:2;
+    }
+
+    .contact {
+        position:relative;
+        border-radius: 3px;
+        background-color: white;
+        padding-left: 15px;
+    }
+    
+    .fn, .msg, .email {
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    input {
+        width: 90%;
+        padding: 5px;
+    }
+    
+    .bigmsg {
+        padding-bottom: 100px;
+    }
+    
+    .submit {
+        background-color: #222;
+        padding: 5px;
+        font-size: 1.2rem;
+        color: #c78e07;
+        margin: 10px;
+    }
+    
+    .hours {
+        padding: auto;
+        width:20%;
+        padding: 15px;
+    }
+    
+    .table {
+        display: fixed;
+        align-items: center;
+        width: 60%;
+        padding-left:55px;
+        padding-top: 4px;
+        padding-bottom: 10px;
+
+    }
+    
+    th {
+        background-color: #ffe6ac;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 126%;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .hoo {
+        padding-top: 4px;
+        font-size: 28px;
+        padding: 8px;
+        font-weight: bold;
+    
+    }
+    
+    .google-maps {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    .location {
+        font-size: 2.2rem;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+    
+    footer {
+        background-color: #222;
+        color:#c78e07;
+        padding: 20px;
+        line-height: 2.5rem;
+    }
+    
+    span {
+        text-decoration:underline;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
